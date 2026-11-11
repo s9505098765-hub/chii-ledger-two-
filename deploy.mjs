@@ -41,7 +41,7 @@ if (!/^[0-9a-f]{8}-[0-9a-f-]{27,}$/i.test(dbId)) {
 const config = {
   name: WORKER_NAME,
   main: 'worker.js',
-  compatibility_date: '2026-11-12',
+  compatibility_date: '2026-11-11',
   d1_databases: [{ binding: 'DB', database_name: DB_NAME, database_id: dbId }]
 };
 writeFileSync('wrangler.mobile.generated.json', JSON.stringify(config, null, 2) + '\n');
